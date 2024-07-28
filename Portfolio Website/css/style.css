@@ -1,0 +1,654 @@
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  overflow-x: hidden;
+  background-color: hsl(0, 0%, 15%);
+  color: hsl(185, 25%, 94%);
+  margin: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  box-sizing: border-box;
+  display: none;
+}
+body::-webkit-scrollbar {
+  background: hsl(0, 0%, 25%);
+}
+body::-webkit-scrollbar-track {
+  background: hsl(0, 0%, 25%);
+}
+body::-webkit-scrollbar-thumb {
+  background: hsl(0, 0%, 40%);
+  border-radius: 6px;
+}
+body::-webkit-scrollbar-thumb:hover {
+  background: hsl(0, 0%, 50%);
+}
+#page {
+  width: 10%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+#page p {
+  margin: 0;
+}
+#projectsBtn {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  background-color: hsl(0, 0%, 20%);
+  padding: 0;
+  cursor: pointer;
+  transition: width 0.4s ease;
+  position: absolute;
+  left: 25px;
+  display: flex;
+}
+#projectsBtn:hover {
+  width: 150px;
+}
+#wrapper {
+  width: 20%;
+  height: 100%;
+}
+#projectsBtn div.imgWrapper {
+  background-color: hsl(0, 0%, 20%);
+  border-radius: 8px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#btnWrapper div.imgWrapper {
+  background-color: hsl(0, 0%, 20%);
+  border-radius: 8px;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  right: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#iconCont {
+  background-color: hsl(0, 0%, 20%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  border-radius: 8px;
+}
+#btnText {
+  opacity: 0;
+  margin-left: 20px;
+  color: hsl(185, 25%, 94%);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: light;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  width: 80%;
+  height: 100%;
+  transition: opacity 0.2s ease, visibility 0.5s ease;
+  visibility: hidden;
+  margin-left: 20%;
+}
+#btnText.display {
+  opacity: 1;
+  visibility: visible;
+}
+#btnWrapper {
+  width: 10%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+#mainImg {
+  border: 2px solid hsl(35, 45%, 80%);
+  border-radius: 6px;
+  background-color: transparent;
+  background-image: url(""); /* Chosen Image */
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: hsl(0, 1%, 39%);
+  font-weight: bold;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  z-index: 1;
+  transition: 0.15s;
+}
+#mainImg:hover {
+  width: 43px;
+  height: 43px;
+}
+#mainImg div {
+  width: 20px;
+  height: 20px;
+  background-color: antiquewhite;
+  transition: 0.15s;
+}
+#mainImg a {
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#contactBtn2 {
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+#projectsWrapper {
+  background-color: hsl(0, 0%, 15%);
+  width: 99vw;
+  height: 600px;
+  border-bottom: 4px solid hsl(0, 0%, 10%);
+  padding: 80px 0;
+}
+#skillsWrapper {
+  background-color: hsl(0, 0%, 15%);
+  width: 99vw;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#skillsCont {
+  background-color: hsl(0, 0%, 10%);
+  width: 90%;
+  height: 90%;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 80px;
+  border: none;
+  padding: 30px;
+  text-align: left;
+}
+#section1,
+#section2 {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+  margin: 20px;
+}
+#section2{
+  padding: 60px 0;
+}
+#section1 h1,
+#section2 h1 {
+  font-size: 3rem;
+  text-decoration: underline;
+}
+#section1 p,
+#section2 p {
+  font-size: 1.5rem;
+}
+.phoneResponsive {
+  display: none;
+}
+.compResponsive {
+  display: block;
+}
+.projectsCont {
+  background-color: hsl(0, 0%, 10%);
+  width: 80%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 80px;
+  border: none;
+}
+#experienceWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 400px;
+  background-color: hsl(0, 0%, 15%);
+}
+#experienceCont {
+  background-color: hsl(0, 0%, 10%);
+  width: 50vw;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding: 30px;
+  border-radius: 80px;
+}
+#experienceCont h1 {
+  font-size: 3rem;
+  text-decoration: underline;
+}
+#experienceCont p {
+  font-size: 1.5rem;
+}
+.scroll-1::-webkit-scrollbar {
+  background: hsl(0, 0%, 25%);
+  height: 10px;
+}
+.scroll-1::-webkit-scrollbar-track {
+  background: hsl(0, 0%, 25%);
+}
+.scroll-1::-webkit-scrollbar-thumb {
+  background: hsl(0, 0%, 40%);
+  border-radius: 6px;
+}
+.scroll-1::-webkit-scrollbar-thumb:hover {
+  background: hsl(0, 0%, 50%);
+}
+.container * {
+  padding: 0;
+}
+.container {
+  display: flex;
+  overflow-x: scroll;
+  padding: 24px;
+  scroll-snap-type: x mandatory;
+  scroll-padding-top: 24px;
+  background-color: #1a1a1a;
+  overflow-y: hidden;
+  height: 100%;
+  align-items: center;
+}
+.container .card {
+  flex: 0 0 80%;
+  scroll-snap-align: center;
+  margin-left: 90px;
+}
+.container .card3 {
+  flex: 0 0 80%;
+  margin-left: 90px;
+  margin-right: 110px;
+  scroll-snap-align: center;
+}
+.card h1 {
+  font-size: 5rem;
+}
+.card3 h1 {
+  font-size: 5rem;
+}
+.downloadBtn {
+  display: inline-block;
+  padding: 25px 50px;
+  background-color: transparent;
+  border: 3px solid hsl(185, 25%, 94%);
+  text-decoration: none;
+  transition: 0.3s;
+  color: hsl(185, 25%, 94%);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: bold;
+}
+.downloadBtn:hover {
+  background-color: hsl(185, 25%, 74%);
+  border-color: #1a1a1a;
+  color: #1a1a1a;
+}
+header {
+  margin-top: 0;
+  width: 99vw;
+  height: 75px;
+  background-color: hsl(0, 0%, 8%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  font-size: 25px;
+  z-index: 1;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+header a {
+  color: hsl(185, 25%, 94%);
+  text-decoration: none;
+}
+header a:hover {
+  text-decoration: underline;
+}
+header h1 {
+  font-size: 2.5rem;
+}
+footer {
+  margin-top: 0;
+  width: 100vw;
+  height: auto;
+  background-color: hsl(0, 0%, 20%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  color: hsl(0, 0%, 30%);
+  font-style: italic;
+}
+.title {
+  font-weight: bolder;
+  font-size: 8rem;
+  font-family: "nunito";
+}
+
+.mainCont {
+  width: 100vw;
+  height: 400px;
+  padding: 10px;
+  background-color: hsl(0, 0%, 15%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#textCont {
+  display: flex;
+  border-bottom: 4px solid hsl(0, 0%, 20%);
+  border-top: 4px solid hsl(0, 0%, 20%);
+  width: 100vw;
+}
+
+#aboutMeCont,
+#pathwayCont {
+  flex: 1;
+  padding: 35px;
+  width: 50%;
+  height: auto;
+  background-color: hsl(0, 0%, 10%);
+}
+
+#aboutMeCont {
+  border-right: 2px solid hsl(0, 0%, 20%);
+}
+
+#pathwayCont {
+  border-left: 2px solid hsl(0, 0%, 20%);
+}
+
+#titleCont {
+  width: 75vw;
+  flex: 1.5;
+  display: flex;
+  flex-direction: column;
+  padding: 0 190px;
+}
+
+#titleCont h1 {
+  margin: 0;
+  letter-spacing: 0.75rem;
+}
+
+#titleCont hr {
+  width: 80%;
+  border: 3px solid hsl(185, 25%, 94%);
+  border-radius: 3px;
+}
+
+#titleWrapper1 {
+  display: flex;
+  justify-content: left;
+}
+
+#titleWrapper2 {
+  display: flex;
+  justify-content: right;
+}
+
+#imgCont {
+  background-image: url("");
+  /* Chosen Image */
+  background-color: antiquewhite;
+  border-radius: 50%;
+  width: 20vw;
+  border: 6px solid hsl(80, 100%, 20%);
+  height: 20vw;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-left: 25px;
+  color: hsl(0, 0%, 10%);
+  font-weight: bold;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+#contactCont {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 30px;
+  width: 100vw;
+  height: 300px;
+  background-color: hsl(0, 0%, 15%);
+}
+
+#contactCont a {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+#contactBtn {
+  width: 80%;
+  height: 180px;
+  border: 10px solid hsla(60, 100%, 60%, 0.4);
+  border-bottom-left-radius: 80px;
+  border-bottom-right-radius: 80px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background-color: hsl(0, 0%, 8%);
+  color: hsla(60, 100%, 60%, 0.4);
+  font-size: 5rem;
+  font-family: Helvetica, Arial, sans-serif;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#contactBtn:hover {
+  background-color: hsla(60, 100%, 20%, 0.4);
+  color: hsl(185, 25%, 94%);
+  height: 190px;
+  width: 82%;
+  font-size: 5.1rem;
+  box-shadow: 0 0 20px 15px hsla(60, 100%, 20%, 0.4);
+}
+@media (width <= 500px) {
+  .title {
+    font-size: 2rem;
+  }
+  #titleCont {
+    width: 75vw;
+    flex: 1.5;
+    display: flex;
+    flex-direction: column;
+    padding: 0 22vw;
+  }
+  #titleWrapper1 {
+    justify-content: center;
+  }
+  #titleWrapper2 {
+    justify-content: center;
+  }
+  #titleCont hr{
+    width: 220px;
+  }
+  #mainCont {
+    height: 200px;
+  }
+  .downloadBtn {
+    padding: 5% 12%;
+  }
+  #experienceCont h1 {
+    font-size: 2rem;
+    text-decoration: underline;
+  }
+  #experienceCont {
+    height: auto;
+  }
+  #skillsCont {
+    height: auto;
+  }
+  #skillsWrapper {
+    height: auto;
+    padding: 15px;
+    width: 100vw;
+  }
+  #section1,
+  #section2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    margin: 20px;
+  }
+  #section1 {
+    flex: 1;
+    width: 95%;
+  }
+  #section2 {
+    flex: 0;
+    margin: 0;
+  }
+  .phoneResponsive {
+    display: block;
+  }
+  .compResponsive {
+    display: none;
+  }
+  #projectsWrapper {
+    width: 100vw;
+  }
+  header {
+    width: 100vw;
+  }
+  header h1 {
+    font-size: 1.5rem;
+  }
+  #contactBtn {
+    font-size: 3rem;
+  }
+  #contactBtn:hover {
+    font-size: 3.1rem;
+  }
+  footer {
+    height: auto;
+    padding: 0 30px;
+  }
+}
+@media (500px <= width <=1050px) {
+  .title {
+    font-size: 3.5rem;
+  }
+  #titleCont {
+    width: 75vw;
+    flex: 1.5;
+    display: flex;
+    flex-direction: column;
+    padding: 0 22vw;
+  }
+  #titleWrapper1 {
+    justify-content: center;
+  }
+  #titleWrapper2 {
+    justify-content: center;
+  }
+  #titleCont hr{
+    width: 220px;
+  }
+  #mainCont {
+    height: auto;
+    padding: 30px 0;
+  }
+  #imgCont {
+    width: 22vw;
+    height: 22vw;
+  }
+  .downloadBtn {
+    padding: 5% 12%;
+  }
+  #experienceCont h1 {
+    font-size: 2rem;
+    text-decoration: underline;
+  }
+  #experienceCont {
+    height: auto;
+  }
+  #skillsCont {
+    height: auto;
+  }
+  #skillsWrapper {
+    height: auto;
+    padding: 15px;
+    width: 100vw;
+  }
+  #section1,
+  #section2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    margin: 20px;
+  }
+  #section1 {
+    flex: 1;
+  }
+  #section2 {
+    flex: 0;
+    margin: 0;
+  }
+  .phoneResponsive {
+    display: block;
+  }
+  .compResponsive {
+    display: none;
+  }
+  #projectsWrapper {
+    width: 100vw;
+  }
+  header {
+    width: 100vw;
+  }
+  header h1 {
+    font-size: 1.5rem;
+  }
+  #contactBtn {
+    font-size: 3rem;
+  }
+  #contactBtn:hover {
+    font-size: 3.1rem;
+  }
+  footer {
+    height: auto;
+    padding: 0 30px;
+  }
+}
