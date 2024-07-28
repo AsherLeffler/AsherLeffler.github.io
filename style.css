@@ -580,6 +580,13 @@ footer {
   #contactBtn:hover {
     font-size: 3.1rem;
   }
+  #btnText.display {
+    opacity: 1;
+    visibility: hidden;
+  }
+  #projectsBtn:hover {
+    width: 50px;
+  }
   footer {
     height: auto;
     padding: 0 30px;
