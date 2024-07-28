@@ -424,9 +424,9 @@ footer {
   background-image: url("imageOfMe.png");
   /* Chosen Image */
   background-color: antiquewhite;
-  border-radius: 50%;
+  border-radius: 45%;
   width: 25vw;
-  border: 6px solid hsl(0, 0%, 8%);
+  border: none;
   height: 25vw;
   background-repeat: no-repeat;
   background-position: center;
