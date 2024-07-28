@@ -311,8 +311,8 @@ body::-webkit-scrollbar-thumb:hover {
   font-weight: bold;
 }
 .downloadBtn:hover {
-  background-color: hsl(185, 25%, 74%);
-  border-color: #1a1a1a;
+  background-color: hsl(185, 25%, 84%);
+  border-color: hsl(185, 25%, 94%);
   color: #1a1a1a;
 }
 header {
