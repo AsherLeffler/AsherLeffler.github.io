@@ -425,9 +425,9 @@ footer {
   /* Chosen Image */
   background-color: antiquewhite;
   border-radius: 50%;
-  width: 23vw;
+  width: 22vw;
   border: 6px solid hsl(80, 100%, 20%);
-  height: 23vw;
+  height: 22vw;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -680,5 +680,11 @@ footer {
   footer {
     height: auto;
     padding: 0 30px;
+  }
+}
+@media (width > 1050px){
+  #imgCont {
+    width: 22vw;
+    height: 22vw;
   }
 }
