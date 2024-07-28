@@ -425,9 +425,9 @@ footer {
   /* Chosen Image */
   background-color: antiquewhite;
   border-radius: 50%;
-  width: 25vw;
+  width: 23vw;
   border: 6px solid hsl(80, 100%, 20%);
-  height: 25vw;
+  height: 23vw;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
