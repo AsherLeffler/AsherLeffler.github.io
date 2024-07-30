@@ -358,15 +358,15 @@ header h1 {
   flex: 0.0287;
 }
 .head3 {
-  background-color: #66dc59;
+  background-color: hsl(200, 100%, 52%);
   flex: 0.0287;
 }
 .head4 {
-  background-color: #ffb834;
+  background-color: hsl(200, 100%, 44%);
   flex: 0.0287;
 }
 .head5 {
-  background-color: #ff4d4d;
+  background-color: hsl(200, 100%, 36%);
   flex: 0.075;
 }
 footer {
@@ -422,22 +422,22 @@ footer {
 .outer {
   border-bottom: 40px solid transparent;
   border-left: 40px solid transparent;
-  border-top: 40px solid #66dc59;
-  border-right: 40px solid #66dc59;
+  border-top: 40px solid hsl(200, 100%, 52%);
+  border-right: 40px solid hsl(200, 100%, 52%);
   z-index: 2;
 }
 .inner {
   border-bottom: 30px solid transparent;
   border-left: 30px solid transparent;
-  border-top: 30px solid #ffb834;
-  border-right: 30px solid #ffb834;
+  border-top: 30px solid hsl(200, 100%, 44%);
+  border-right: 30px solid hsl(200, 100%, 44%);
   z-index: 3;
 }
 .innerMost {
   border-bottom: 20px solid transparent;
   border-left: 20px solid transparent;
-  border-top: 20px solid #ff4d4d;
-  border-right: 20px solid #ff4d4d;
+  border-top: 20px solid hsl(200, 100%, 36%);
+  border-right: 20px solid hsl(200, 100%, 36%);
   z-index: 4;
 }
 #textCont {
