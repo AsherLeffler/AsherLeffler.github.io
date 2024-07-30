@@ -176,6 +176,7 @@ body::-webkit-scrollbar-thumb:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 50px;
 }
 #skillsCont {
   background-color: hsl(0, 0%, 10%);
@@ -466,8 +467,8 @@ footer {
   border: 10px solid hsl(60, 100%, 60%);
   border-bottom-left-radius: 80px;
   border-bottom-right-radius: 80px;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
   background-color: hsl(0, 0%, 8%);
   color: hsl(60, 100%, 60%);
   font-size: 5rem;
@@ -525,12 +526,18 @@ footer {
   #experienceCont {
     height: auto;
   }
+  .projectsCont {
+    height: 250px;
+  }
+  #projectsWrapper{
+    height: auto;
+  }
   #skillsCont {
     height: auto;
   }
   #skillsWrapper {
     height: auto;
-    padding: 15px;
+    padding-top: 50px;
     width: 100vw;
   }
   #section1,
@@ -540,6 +547,12 @@ footer {
     justify-content: space-between;
     text-align: left;
     margin: 20px;
+  }
+  #section1 h1{
+    font-size: 1.5rem;
+  }
+  #section1 p{
+    font-size: 1rem;
   }
   #section1 {
     flex: 1;
@@ -562,10 +575,10 @@ footer {
     height: auto;
   }
   .card h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   .card3 h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   } 
   header {
     width: 100vw;
@@ -574,11 +587,17 @@ footer {
     font-size: 1.5rem;
   }
   #contactBtn {
-    font-size: 2rem;
     font-weight: bolder;
+    font-size: 2rem;
+    width: 100%;
+    height: 120px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;  
   }
   #contactBtn:hover {
-    font-size: 3.1rem;
+    font-size: 2.1rem;
   }
   #btnText.display {
     opacity: 1;
@@ -631,12 +650,18 @@ footer {
   #experienceCont {
     height: auto;
   }
+  .projectsCont {
+    height: 300px;
+  }
+  #projectsWrapper{
+    height: auto;
+  }
   #skillsCont {
     height: auto;
   }
   #skillsWrapper {
     height: auto;
-    padding: 15px;
+    padding-top: 50px;
     width: 100vw;
   }
   #section1,
@@ -646,6 +671,12 @@ footer {
     justify-content: space-between;
     text-align: left;
     margin: 20px;
+  }
+  #section1 h1{
+    font-size: 2rem;
+  }
+  #section1 p{
+    font-size: 1.5rem;
   }
   #section1 {
     flex: 1;
@@ -667,10 +698,10 @@ footer {
     height: auto;
   }
   .card h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
   .card3 h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
   header {
     width: 100vw;
@@ -679,10 +710,17 @@ footer {
     font-size: 1.5rem;
   }
   #contactBtn {
-    font-size: 3rem;
+    font-weight: bolder;
+    font-size: 2.75rem;
+    width: auto;
+    padding: 20px;
+    border-bottom-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;  
   }
   #contactBtn:hover {
-    font-size: 3.1rem;
+    font-size: 2.85rem;
   }
   footer {
     height: auto;
