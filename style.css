@@ -15,6 +15,7 @@ body {
 }
 body::-webkit-scrollbar {
   background: hsl(0, 0%, 25%);
+  width: 13px;
 }
 body::-webkit-scrollbar-track {
   background: hsl(0, 0%, 25%);
@@ -198,7 +199,7 @@ body::-webkit-scrollbar-thumb:hover {
   text-align: left;
   margin: 20px;
 }
-#section2{
+#section2 {
   padding: 60px 0;
 }
 #section1 h1,
@@ -326,7 +327,7 @@ header {
   justify-content: space-between;
   position: fixed;
   font-size: 25px;
-  z-index: 1;
+  z-index: 100;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
 }
@@ -372,26 +373,91 @@ footer {
   display: flex;
   border-bottom: 4px solid hsl(0, 0%, 20%);
   border-top: 4px solid hsl(0, 0%, 20%);
-  width: 100vw;
+  width: calc(100vw - 13px);
 }
-
+.text-section1,
+.text-section2 {
+  flex: 1;
+  background-color: hsl(0, 0%, 10%);
+  width: 50%;
+  height: auto;
+}
 #aboutMeCont,
 #pathwayCont {
   flex: 1;
   padding: 35px;
-  width: 50%;
-  height: auto;
+  width: 100%;
+  height: 100%;
   background-color: hsl(0, 0%, 10%);
 }
 
-#aboutMeCont {
+.text-section1 {
   border-right: 2px solid hsl(0, 0%, 20%);
 }
 
-#pathwayCont {
+.text-section2 {
   border-left: 2px solid hsl(0, 0%, 20%);
 }
-
+.top-bar,
+.bottom-bar {
+  display: flex;
+}
+.triangle-tr,
+.triangle-tl,
+.triangle-br,
+.triangle-bl {
+  width: 100%;
+  flex: 1;
+  display: flex;
+}
+.triangle-br,
+.triangle-bl {
+  align-items: end;
+}
+.triangle-tr,
+.triangle-br {
+  justify-content: end;
+}
+.triangle-tl,
+.triangle-bl {
+  justify-content: start;
+}
+.bar-horizontal-blue,
+.bar-horizontal-green,
+.bar-vertical-red,
+.bar-vertical-orange {
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+.bar-horizontal-blue {
+  border-top: 30px solid #33bbff;
+  border-bottom: 30px solid #33bbff;
+  border-right: 8px solid #33bbff;
+  border-left: 8px solid #33bbff;
+  z-index: 2;
+}
+.bar-vertical-red {
+  border-top: 8px solid #ff4d4d;
+  border-bottom: 8px solid #ff4d4d;
+  border-right: 30px solid #ff4d4d;
+  border-left: 30px solid #ff4d4d;
+  z-index: 1;
+}
+.bar-horizontal-green {
+  border-top: 30px solid #66dc59;
+  border-bottom: 30px solid #66dc59;
+  border-right: 8px solid #66dc59;
+  border-left: 8px solid #66dc59;
+  z-index: 2;
+}
+.bar-vertical-orange {
+  border-top: 8px solid #ffb834;
+  border-bottom: 8px solid #ffb834;
+  border-right: 30px solid #ffb834;
+  border-left: 30px solid #ffb834;
+  z-index: 1;
+}
 #titleCont {
   width: 75vw;
   flex: 1.5;
@@ -502,19 +568,46 @@ footer {
   #titleWrapper2 {
     justify-content: center;
   }
-  #titleCont hr{
+  #titleCont hr {
     width: 100%;
     text-align: left;
   }
   #mainCont {
     height: 200px;
   }
-  #imgCont{
+  #imgCont {
     font-size: 1rem;
     width: 22vw;
     height: 22vw;
     margin: 0;
     border-radius: 25px;
+  }
+  #textCont{
+    width: 100vw;
+  }
+  .bar-horizontal-blue{
+    border-top-width: 22.5px;
+    border-bottom-width: 22.5px;
+    border-right-width: 6px;
+    border-left-width: 6px;
+  }
+  .bar-horizontal-green{
+    border-top-width: 22.5px;
+    border-bottom-width: 22.5px;
+    border-right-width: 6px;
+    border-left-width: 6px;
+  }
+  .bar-vertical-red{
+    border-top-width: 6px;
+    border-bottom-width: 6px;
+    border-right-width: 22.5px;
+    border-left-width: 22.5px;
+  }
+  .bar-vertical-orange{
+    border-top-width: 6px;
+    border-bottom-width: 6px;
+    border-right-width: 22.5px;
+    border-left-width: 22.5px;
   }
   .downloadBtn {
     padding: 5% 12%;
@@ -529,7 +622,7 @@ footer {
   .projectsCont {
     height: 50vw;
   }
-  #projectsWrapper{
+  #projectsWrapper {
     height: auto;
   }
   #skillsCont {
@@ -548,10 +641,10 @@ footer {
     text-align: left;
     margin: 20px;
   }
-  #section1 h1{
+  #section1 h1 {
     font-size: 1.5rem;
   }
-  #section1 p{
+  #section1 p {
     font-size: 1rem;
   }
   #section1 {
@@ -571,7 +664,7 @@ footer {
   #projectsWrapper {
     width: 100vw;
   }
-  .container{
+  .container {
     height: auto;
   }
   .card h1 {
@@ -579,7 +672,7 @@ footer {
   }
   .card3 h1 {
     font-size: 2.5rem;
-  } 
+  }
   header {
     width: 100vw;
   }
@@ -594,7 +687,7 @@ footer {
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
     border-top-left-radius: 15px;
-    border-top-right-radius: 15px;  
+    border-top-right-radius: 15px;
   }
   #contactBtn:hover {
     font-size: 2.1rem;
@@ -628,7 +721,7 @@ footer {
   #titleWrapper2 {
     justify-content: center;
   }
-  #titleCont hr{
+  #titleCont hr {
     width: 220px;
   }
   #mainCont {
@@ -639,6 +732,33 @@ footer {
     width: 22vw;
     height: 22vw;
     font-size: 1.5rem;
+  }
+  #textCont{
+    width: 100vw;
+  }
+  .bar-horizontal-blue{
+    border-top-width: 26px;
+    border-bottom-width: 26px;
+    border-right-width: 6.93px;
+    border-left-width: 6.93px;
+  }
+  .bar-horizontal-green{
+    border-top-width: 26px;
+    border-bottom-width: 26px;
+    border-right-width: 6.93px;
+    border-left-width: 6.93px;
+  }
+  .bar-vertical-red{
+    border-top-width: 6.93px;
+    border-bottom-width: 6.93px;
+    border-right-width: 26px;
+    border-left-width: 26px;
+  }
+  .bar-vertical-orange{
+    border-top-width: 6.93px;
+    border-bottom-width: 6.93px;
+    border-right-width: 26px;
+    border-left-width: 26px;
   }
   .downloadBtn {
     padding: 5% 12%;
@@ -653,7 +773,7 @@ footer {
   .projectsCont {
     height: 50vw;
   }
-  #projectsWrapper{
+  #projectsWrapper {
     height: auto;
   }
   #skillsCont {
@@ -672,10 +792,10 @@ footer {
     text-align: left;
     margin: 20px;
   }
-  #section1 h1{
+  #section1 h1 {
     font-size: 2rem;
   }
-  #section1 p{
+  #section1 p {
     font-size: 1.5rem;
   }
   #section1 {
@@ -694,7 +814,7 @@ footer {
   #projectsWrapper {
     width: 100vw;
   }
-  .container{
+  .container {
     height: auto;
   }
   .card h1 {
@@ -717,7 +837,7 @@ footer {
     border-bottom-left-radius: 70px;
     border-bottom-right-radius: 70px;
     border-top-left-radius: 20px;
-    border-top-right-radius: 20px;  
+    border-top-right-radius: 20px;
   }
   #contactBtn:hover {
     font-size: 2.85rem;
