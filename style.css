@@ -477,7 +477,7 @@ footer {
 }
 
 #contactBtn:hover {
-  background-color: hsla(60, 100%, 20%, 0.4);
+  background-color: hsla(60, 100%, 20%, 0.2);
   color: hsl(185, 25%, 94%);
   height: 190px;
   width: 82%;
