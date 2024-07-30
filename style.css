@@ -623,6 +623,21 @@ footer {
   box-shadow: 0 0 20px 15px hsla(60, 100%, 60%, 0.4);
 }
 @media (width <= 500px) {
+  .head1 {
+    background-color: hsl(200, 100%, 36%);
+    border-bottom-left-radius: 30px;
+    flex: 1;
+    height: 73px;
+  }
+  .head2,
+  .head3,
+  .head4,
+  .head5{
+    background-color: hsl(200, 100%, 36%);
+    flex: 1;
+    border: none;
+    height: 73px;
+  }
   .title {
     font-size: 2rem;
   }
@@ -652,6 +667,42 @@ footer {
     height: 22vw;
     margin: 0;
     border-radius: 25px;
+  }
+  .outerMost,
+  .outer,
+  .inner,
+  .innerMost {
+    position: absolute;
+    top: -102px;
+    right: -10px;
+  }
+  .outerMost {
+    border-bottom: 40px solid transparent;
+    border-left: 40px solid transparent;
+    border-top: 40px solid #33bbff;
+    border-right: 40px solid #33bbff;
+    z-index: 1;
+  }
+  .outer {
+    border-bottom: 32px solid transparent;
+    border-left: 32px solid transparent;
+    border-top: 32px solid hsl(200, 100%, 52%);
+    border-right: 32px solid hsl(200, 100%, 52%);
+    z-index: 2;
+  }
+  .inner {
+    border-bottom: 24px solid transparent;
+    border-left: 24px solid transparent;
+    border-top: 24px solid hsl(200, 100%, 44%);
+    border-right: 24px solid hsl(200, 100%, 44%);
+    z-index: 3;
+  }
+  .innerMost {
+    border-bottom: 16px solid transparent;
+    border-left: 16px solid transparent;
+    border-top: 16px solid hsl(200, 100%, 36%);
+    border-right: 16px solid hsl(200, 100%, 36%);
+    z-index: 4;
   }
   #textCont {
     width: 100vw;
@@ -776,6 +827,21 @@ footer {
   }
 }
 @media (500px <= width <=1050px) {
+  .head1 {
+    background-color: hsl(200, 100%, 36%);
+    border-bottom-left-radius: 30px;
+    flex: 1;
+    height: 73px;
+  }
+  .head2,
+  .head3,
+  .head4,
+  .head5{
+    background-color: hsl(200, 100%, 36%);
+    flex: 1;
+    border: none;
+    height: 73px;
+  }
   .title {
     font-size: 3.5rem;
   }
@@ -803,6 +869,14 @@ footer {
     width: 22vw;
     height: 22vw;
     font-size: 1.5rem;
+  }
+  .outerMost,
+  .outer,
+  .inner,
+  .innerMost {
+    position: absolute;
+    top: -148px;
+    right: 0px;
   }
   #textCont {
     width: 100vw;
