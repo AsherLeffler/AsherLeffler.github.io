@@ -330,6 +330,19 @@ header {
   z-index: 100;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
+  transition: height 0.4s ease;
+}
+.hide-header{
+  height: 0;
+}
+.headerContent{
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.2s ease, visibility 0.2s ease;
+}
+.hide{
+  opacity: 0;
+  visibility: hidden;
 }
 header a {
   color: hsl(185, 25%, 94%);
