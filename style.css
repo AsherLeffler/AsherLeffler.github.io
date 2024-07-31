@@ -687,13 +687,13 @@ footer {
 #contactBtn {
   width: 80%;
   height: 180px;
-  border: 10px solid hsl(60, 100%, 60%);
+  border: 10px solid #2a98ce;
   border-bottom-left-radius: 80px;
   border-bottom-right-radius: 80px;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
-  background-color: hsl(0, 0%, 8%);
-  color: hsl(60, 100%, 60%);
+  background-color: hsl(0, 0%, 20%);
+  color: #2a98ce;
   font-size: 5rem;
   font-family: Helvetica, Arial, sans-serif;
   cursor: pointer;
@@ -701,12 +701,12 @@ footer {
 }
 
 #contactBtn:hover {
-  background-color: hsla(60, 100%, 20%, 0.2);
+  background-color: #2a98ce33;
   color: hsl(185, 25%, 94%);
   height: 190px;
   width: 82%;
   font-size: 5.1rem;
-  box-shadow: 0 0 20px 15px hsla(60, 100%, 60%, 0.4);
+  box-shadow: 0 0 20px 15px #2a98ce66;
 }
 @media (width <= 500px) {
   .start-title{
