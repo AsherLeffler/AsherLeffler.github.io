@@ -34,15 +34,13 @@ body::-webkit-scrollbar-thumb:hover {
   justify-content: center;
   align-items: center;
   background-color: #1a1a1a;
-  opacity: 1;
   width: 100vw;
   height: 100vh;
-  transition: visibility 3s ease-in-out, opacity 3s ease-in-out, height 3s ease-in-out;
+  transition: visibility 3s ease-in-out, height 3s ease-in-out;
   overflow: hidden;
 }
 .hide-start-page {
   visibility: hidden;
-  opacity: 0;
   height: 0;
 }
 
