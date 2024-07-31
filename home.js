@@ -9,8 +9,8 @@ document.addEventListener("DOMContentLoaded", () => {
     startTitle.classList.add("show-title");
     setTimeout(() => {
       startBtn.classList.add("show-start-btn");
-    }, 2000);
-  }, 3000);
+    }, 1500);
+  }, 1500);
   startBtn.addEventListener("click", () => {
     startPage.classList.add("hide-start-page");
     setTimeout(() => {
