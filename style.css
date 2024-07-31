@@ -5,7 +5,7 @@
 }
 body {
   overflow-x: hidden;
-  background-color: hsl(0, 0%, 15%);
+  background-color: hsl(0, 0%, 10%);
   color: hsl(185, 25%, 94%);
   margin: 0;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
@@ -26,6 +26,72 @@ body::-webkit-scrollbar-thumb {
 }
 body::-webkit-scrollbar-thumb:hover {
   background: hsl(0, 0%, 50%);
+}
+.start-page {
+  display: flex;
+  visibility: visible;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #1a1a1a;
+  opacity: 1;
+  width: 100vw;
+  height: 100vh;
+  transition: visibility 3s ease-in-out, opacity 3s ease-in-out;
+}
+.hide-start-page {
+  visibility: hidden;
+  opacity: 0;
+}
+.start-title {
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+  font-size: 3rem;
+}
+
+.show-title {
+  opacity: 1;
+}
+
+.start-btn {
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility 2s ease-in-out, opacity 2s ease-in-out;
+}
+
+.show-start-btn {
+  visibility: visible;
+  opacity: 1;
+}
+.start-btn button{
+  width: 250px;
+  height: 80px;
+  background-color: hsl(0, 0%, 20%);
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: hsl(185, 25%, 94%);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  cursor: pointer;
+  transition: background-color 0.15s ease-in-out;
+}
+.start-btn button:hover{
+  background-color: hsl(0, 0%, 25%);
+}
+.start-btn button:active{
+  background-color: hsl(0, 0%, 30%);
+}
+.main-body {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 3s ease-in-out, opacity 3s ease-in-out;
+  position: absolute;
+  top: 0px;
+}
+.show-main-body {
+  visibility: visible;
+  opacity: 1;
 }
 #page {
   width: 10%;
@@ -332,15 +398,15 @@ header {
   border-bottom-right-radius: 30px;
   transition: height 0.4s ease;
 }
-.hide-header{
+.hide-header {
   height: 0;
 }
-.headerContent{
+.headerContent {
   visibility: visible;
   opacity: 1;
   transition: opacity 0.2s ease, visibility 0.2s ease;
 }
-.hide{
+.hide {
   opacity: 0;
   visibility: hidden;
 }
@@ -645,7 +711,7 @@ footer {
   .head2,
   .head3,
   .head4,
-  .head5{
+  .head5 {
     background-color: hsl(200, 100%, 36%);
     flex: 1;
     border: none;
@@ -849,7 +915,7 @@ footer {
   .head2,
   .head3,
   .head4,
-  .head5{
+  .head5 {
     background-color: hsl(200, 100%, 36%);
     flex: 1;
     border: none;
