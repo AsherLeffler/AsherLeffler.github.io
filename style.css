@@ -5,7 +5,7 @@
 }
 body {
   overflow-x: hidden;
-  background-color: hsl(0, 0%, 10%);
+  background-color: hsl(0, 0%, 15%);
   color: hsl(185, 25%, 94%);
   margin: 0;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
@@ -37,16 +37,22 @@ body::-webkit-scrollbar-thumb:hover {
   opacity: 1;
   width: 100vw;
   height: 100vh;
-  transition: visibility 3s ease-in-out, opacity 3s ease-in-out;
+  transition: visibility 3s ease-in-out, opacity 3s ease-in-out, height 3s ease-in-out;
+  overflow: hidden;
 }
 .hide-start-page {
   visibility: hidden;
   opacity: 0;
+  height: 0;
 }
+
 .start-title {
   opacity: 0;
   transition: opacity 2s ease-in-out;
-  font-size: 3rem;
+  font-size: 4rem;
+  font-weight: bolder;
+  font-family: "Dancing Script", cursive;  
+  text-shadow: 0 0 30px hsla(188, 27%, 94%, 0.9);
 }
 
 .show-title {
@@ -63,7 +69,7 @@ body::-webkit-scrollbar-thumb:hover {
   visibility: visible;
   opacity: 1;
 }
-.start-btn button{
+.start-btn button {
   width: 250px;
   height: 80px;
   background-color: hsl(0, 0%, 20%);
@@ -72,20 +78,22 @@ body::-webkit-scrollbar-thumb:hover {
   font-weight: bold;
   font-size: 1.4rem;
   color: hsl(185, 25%, 94%);
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   cursor: pointer;
   transition: background-color 0.15s ease-in-out;
+  box-shadow: 0 0 30px hsla(188, 27%, 94%, 0.9);
 }
-.start-btn button:hover{
+.start-btn button:hover {
   background-color: hsl(0, 0%, 25%);
 }
-.start-btn button:active{
+.start-btn button:active {
   background-color: hsl(0, 0%, 30%);
 }
 .main-body {
   visibility: hidden;
   opacity: 0;
-  transition: visibility 3s ease-in-out, opacity 3s ease-in-out;
+  transition: visibility 3s ease-in-out, opacity 3s ease, scale 3s ease-out;
   position: absolute;
   top: 0px;
 }
@@ -115,6 +123,7 @@ body::-webkit-scrollbar-thumb:hover {
   position: absolute;
   left: 25px;
   display: flex;
+  overflow: hidden;
 }
 #projectsBtn:hover {
   width: 150px;
@@ -588,24 +597,24 @@ footer {
   z-index: 2;
 }
 .bar-vertical-red {
-  border-top: 8px solid #ff4d4d;
-  border-bottom: 8px solid #ff4d4d;
-  border-right: 30px solid #ff4d4d;
-  border-left: 30px solid #ff4d4d;
+  border-top: 8px solid hsl(200, 100%, 36%);
+  border-bottom: 8px solid hsl(200, 100%, 36%);
+  border-right: 30px solid hsl(200, 100%, 36%);
+  border-left: 30px solid hsl(200, 100%, 36%);
   z-index: 1;
 }
 .bar-horizontal-green {
-  border-top: 30px solid #66dc59;
-  border-bottom: 30px solid #66dc59;
-  border-right: 8px solid #66dc59;
-  border-left: 8px solid #66dc59;
+  border-top: 30px solid #33bbff;
+  border-bottom: 30px solid #33bbff;
+  border-right: 8px solid #33bbff;
+  border-left: 8px solid #33bbff;
   z-index: 2;
 }
 .bar-vertical-orange {
-  border-top: 8px solid #ffb834;
-  border-bottom: 8px solid #ffb834;
-  border-right: 30px solid #ffb834;
-  border-left: 30px solid #ffb834;
+  border-top: 8px solid hsl(200, 100%, 36%);
+  border-bottom: 8px solid hsl(200, 100%, 36%);
+  border-right: 30px solid hsl(200, 100%, 36%);
+  border-left: 30px solid hsl(200, 100%, 36%);
   z-index: 1;
 }
 #titleCont {
@@ -702,6 +711,9 @@ footer {
   box-shadow: 0 0 20px 15px hsla(60, 100%, 60%, 0.4);
 }
 @media (width <= 500px) {
+  .start-title{
+    font-size: 10vw;
+  }
   .head1 {
     background-color: hsl(200, 100%, 36%);
     border-bottom-left-radius: 30px;
@@ -906,6 +918,10 @@ footer {
   }
 }
 @media (500px <= width <=1050px) {
+  .start-title{
+    font-size: 4em;
+    text-align: center;
+  }
   .head1 {
     background-color: hsl(200, 100%, 36%);
     border-bottom-left-radius: 30px;
