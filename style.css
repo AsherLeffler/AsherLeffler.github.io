@@ -319,6 +319,7 @@ body::-webkit-scrollbar-thumb:hover {
   flex: 1;
   height: 100%;
   justify-content: center;
+  padding: 35px;
 }
 .projectInfo h1{
   margin: 0;
@@ -381,9 +382,6 @@ body::-webkit-scrollbar-thumb:hover {
 }
 .scroll-1::-webkit-scrollbar-thumb:hover {
   background: hsl(0, 0%, 50%);
-}
-.container * {
-  padding: 0;
 }
 .container {
   display: flex;
@@ -872,9 +870,31 @@ footer {
   #experienceCont {
     height: auto;
   }
+  .container .card {
+    margin-left: 15px;
+    flex: 0 0 90%;
+  }
+  .container .card3 {
+    margin-left: 15px;
+    margin-right: 35px;
+    flex: 0 0 90%;
+  }
   .projectsCont {
-    height: 50vw;
+    height: 60vw;
     display: flex;
+    border-radius: 50px;
+  }
+  .projectInfo{
+    padding: 15px;
+  }
+  .projectsCont a{
+    font-size: 0.75rem;
+    margin-bottom: 5px;
+  }
+  .projectsCont p{
+    font-size: 0.75rem;
+    margin-top: 5px;
+    margin-bottom: 5px;  
   }
   #projectsWrapper {
     height: auto;
@@ -896,10 +916,10 @@ footer {
     margin: 20px;
   }
   #section1 h1 {
-    font-size: 1.5rem;
+    font-size: 0.75rem;
   }
   #section1 p {
-    font-size: 1rem;
+    font-size: 0.75rem;
   }
   #section1 {
     flex: 1;
@@ -922,10 +942,10 @@ footer {
     height: auto;
   }
   .card h1 {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
   }
   .card3 h1 {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
   }
   header {
     width: 100vw;
@@ -1054,6 +1074,18 @@ footer {
   .projectsCont {
     height: 50vw;
   }
+  .projectInfo{
+    padding: 15px;
+  }
+  .projectsCont a{
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+  .projectsCont p{
+    font-size: 1rem;
+    margin-top: 15px;
+    margin-bottom: 15px;  
+  }
   #projectsWrapper {
     height: auto;
   }
@@ -1099,10 +1131,10 @@ footer {
     height: auto;
   }
   .card h1 {
-    font-size: 3.5rem;
+    font-size: 2.4rem;
   }
   .card3 h1 {
-    font-size: 3.5rem;
+    font-size: 2.4rem;
   }
   header {
     width: calc(100vw - 13px);
