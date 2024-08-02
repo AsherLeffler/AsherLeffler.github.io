@@ -49,7 +49,7 @@ body::-webkit-scrollbar-thumb:hover {
   transition: opacity 2s ease-in-out;
   font-size: 4rem;
   font-weight: bolder;
-  font-family: "Dancing Script", cursive;  
+  font-family: "Dancing Script", cursive;
   text-shadow: 0 0 30px hsla(188, 27%, 94%, 0.9);
 }
 
@@ -295,10 +295,52 @@ body::-webkit-scrollbar-thumb:hover {
   width: 80%;
   height: 500px;
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-evenly;
   align-items: center;
   border-radius: 80px;
   border: none;
+}
+.projectImg{
+  display: flex;
+  flex: 1;
+  height: 63%;
+  background-image: url('instaRecipeImg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 15px;
+}
+.projectInfo{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  flex: 1;
+  height: 100%;
+  justify-content: center;
+}
+.projectInfo h1{
+  margin: 0;
+}
+.projectsCont p{
+  font-size: 1.5rem;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.projectsCont a{
+  color: #296aca;
+  text-decoration: none;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 50px;
+  transition: text-decoration 0.2s ease-in-out;
+}
+.projectsCont a:hover{
+  color: #296aca;
+  text-decoration: underline;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 #experienceWrapper {
   display: flex;
@@ -709,7 +751,7 @@ footer {
   box-shadow: 0 0 20px 15px #2a98ce66;
 }
 @media (width <= 500px) {
-  .start-title{
+  .start-title {
     font-size: 10vw;
   }
   .head1 {
@@ -832,6 +874,7 @@ footer {
   }
   .projectsCont {
     height: 50vw;
+    display: flex;
   }
   #projectsWrapper {
     height: auto;
@@ -916,7 +959,7 @@ footer {
   }
 }
 @media (500px <= width <=1050px) {
-  .start-title{
+  .start-title {
     font-size: 4em;
     text-align: center;
   }
