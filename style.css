@@ -298,18 +298,39 @@ body::-webkit-scrollbar-thumb:hover {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  border-radius: 80px;
+  border-radius: 60px;
   border: none;
 }
-.projectImg{
+.projectImg0, .projectImg1, .projectImg2{
   display: flex;
   flex: 1;
-  height: 63%;
-  background-image: url('instaRecipeImg.png');
+  aspect-ratio: 16 / 9;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 15px;
+  display: block;
+}
+.projectImgHidden0, .projectImgHidden1, .projectImgHidden2{
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  max-width: 380px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 15px;
+  display: none;
+  margin-top: 15px;
+}
+.projectImg0, .projectImgHidden0{
+  background-image: url('instaRecipeImg.png');
+}
+.projectImg1, .projectImgHidden1{
+  background-image: url('artifactClickerImg.png');
+}
+.projectImg2, .projectImgHidden2{
+  background-image: url('');
 }
 .projectInfo{
   display: flex;
@@ -686,7 +707,6 @@ footer {
 
 #imgCont {
   background-image: url("imageOfMe.png");
-  /* Chosen Image */
   background-color: antiquewhite;
   border-radius: 45%;
   width: 25vw;
@@ -880,9 +900,15 @@ footer {
     flex: 0 0 90%;
   }
   .projectsCont {
-    height: 60vw;
+    height: auto;
     display: flex;
-    border-radius: 50px;
+    border-radius: 35px;
+  }
+  .projectImg0, .projectImg1, .projectImg2{
+    display: none;
+  }
+  .projectImgHidden0, .projectImgHidden1, .projectImgHidden2{
+    display: flex;
   }
   .projectInfo{
     padding: 15px;
@@ -1072,7 +1098,15 @@ footer {
     height: auto;
   }
   .projectsCont {
-    height: 50vw;
+    height: auto;
+    display: flex;
+    border-radius: 35px;
+  }
+  .projectImg0, .projectImg1, .projectImg2{
+    display: none;
+  }
+  .projectImgHidden0, .projectImgHidden1, .projectImgHidden2{
+    display: flex;
   }
   .projectInfo{
     padding: 15px;
