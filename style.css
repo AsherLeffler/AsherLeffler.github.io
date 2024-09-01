@@ -304,7 +304,7 @@ body::-webkit-scrollbar-thumb:hover {
 .projectImg0, .projectImg1, .projectImg2{
   display: flex;
   flex: 1;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 8 / 5;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -313,7 +313,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 .projectImgHidden0, .projectImgHidden1, .projectImgHidden2{
   width: 100%;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 8 / 5;
   height: auto;
   max-width: 380px;
   background-position: center;
@@ -330,7 +330,7 @@ body::-webkit-scrollbar-thumb:hover {
   background-image: url('artifactClickerImg.png');
 }
 .projectImg2, .projectImgHidden2{
-  background-image: url('');
+  background-image: url('websiteServiceImg.png');
 }
 .projectInfo{
   display: flex;
